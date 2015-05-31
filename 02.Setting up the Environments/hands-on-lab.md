@@ -116,7 +116,41 @@ This gives you the ability to manage the O365 directory using the Azure portal.
 You now can now use your Microsoft Azure  subscription to use with the remaining labs.
 
 <a name="Exercise2"></a>
-##Exercise 2: Create a Apps using the Napa Development Tools
+##Exercise 2: Create an excel and SharePoint add-in using the Napa Development Tools
+### Install the Napa Tools ###
+1. Navigate to the developer site you created in exercise 1. It should be something like http://<your-site>.sharepoint.com/sites/dev
+2. Select build an app.![](http://i.imgur.com/O2sx9EC.png)
+3. You'll be redirected to the SharePoint Store.
+ ![](http://i.imgur.com/ELCBX92.png) and will need to add it ![](http://i.imgur.com/Bo1esWB.png)  Continue through the prompts, add the app to your site, and trust it.
+![](http://i.imgur.com/Kd7HANK.png)
+![](http://i.imgur.com/d5Rx7JG.png)
+### Create an add-in for Excel ###
+1. Navigate back to your developer site (something like http://<your-site>.sharepoint.com/sites/dev) 
+2. Select build an app.![](http://i.imgur.com/O2sx9EC.png)
+3. Click on the Task Pane app for Office option. Name your Task Pane Project and click create.![](http://i.imgur.com/7PeKxvs.png)
+4. Delete Everything inside the `<body></body>` tag
+![](http://i.imgur.com/0Syg3sD.png)
+
+5. Add the following code
+ 
+	`<div id="content-header"><div class="padding"><h1>Welcome!</h1>        </div></div><div id="content-main">      <div class="padding">          <p><strong>Select text and find related Flickr images.</strong></p>                   <button id="get-data-from-selection">Search Flickr</button>      </div><div id="Images"></div></div>`
+
+6. Navigate to Home.js.    In `if (result.status === Office.AsyncResultStatus.Succeeded) {` replace the content with : 
+`app.showNotification('The selected text is:', '"' + result.value + '"');                showImages(result.value);`
+![](http://i.imgur.com/I1FkZeW.png)
+
+7. Add the showImages Function
+    `function showImages(selectedText) {$('#Images').empty();var parameters = {tags: selectedText,tagsmode: "any",format: "json"};$.getJSON("https://secure.flickr.com/services/feeds/photos_public.gne?jsoncallback=?", parameters,function (results) {$.each(results.items, function (index, item) {$('#Images').append($("<img style='height:100px; width: auto; padding-right: 5px;'/>").attr("src", item.media.m));});});}`
+![](http://i.imgur.com/bSa61w7.png)
+
+8. Run the add in.
+
+![](http://i.imgur.com/05iRkXI.png)
+
+9. Start the App, and test it out!
+
+![](http://i.imgur.com/Klmu40F.png)
+![](http://i.imgur.com/9nnTsJJ.png)
 
 
 ##Summary
