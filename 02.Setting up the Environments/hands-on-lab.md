@@ -116,7 +116,7 @@ This gives you the ability to manage the O365 directory using the Azure portal.
 You now can now use your Microsoft Azure  subscription to use with the remaining labs.
 
 <a name="Exercise2"></a>
-##Exercise 2: Create an excel and SharePoint add-in using the Napa Development Tools
+##Exercise 2: Create an Excel and SharePoint add-in using the Napa Development Tools
 ### Install the Napa Tools
 1. Navigate to the developer site you created in exercise 1. It should be something like http://<your-site>.sharepoint.com/sites/dev
 2. Select build an app.![](http://i.imgur.com/O2sx9EC.png)
@@ -153,13 +153,17 @@ You now can now use your Microsoft Azure  subscription to use with the remaining
 ![](http://i.imgur.com/Klmu40F.png)
 ![](http://i.imgur.com/9nnTsJJ.png)
 
+## Create an add-in for SharePoint
+1. Go back to your Napa tools, and create a new App for SharePoint.
+![](http://i.imgur.com/fzxsGsI.png)
+
+2. Continue with the lab here: [https://msdn.microsoft.com/library/office/jj220041#AddControls1](https://msdn.microsoft.com/library/office/jj220041#AddControls1)
+
+By the end of this, you'll have build an add-in for SharePoint and opened the code in your version of Visual Studio
 
 ##Summary
 By completing this hands-on lab you learnt how to:
 - Provision an Office 365 developer tenancy.
 - Provision a Microsoft Azure subscription.
-- Create a Provider-Hosted app.
-- Utilize an Entity Framework model with SQL Azure data.
-- Publish the remote web to Microsoft Azure.
-- Publish an app to SharePoint.
-- Add a SharePoint app to a site.
+- Install the Napa Development Tools
+- Create an add-in for Excel and SharePoint using the Napa Development Tools
