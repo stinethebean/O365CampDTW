@@ -16,7 +16,7 @@ In this lab, you will create a cloud development environment and build a cloud-h
 ##Exercises
 The hands-on lab includes the following exercises:<br/>
 1. <a href="#Exercise1">Obtain Office 365 and Azure subscriptions</a><br/>
-2. <a href="#Exercise2">Exercise 2: Create an Excel and SharePoint add-in using the Napa Development Tools</a><br/>
+2. <a href="#Exercise2">Create an Excel and SharePoint add-in using the Napa Development Tools</a><br/>
 
 <a name="Exercise1"></a>
 ##Exercise 1: Obtain Office 365 and Azure subscriptions
