@@ -76,13 +76,44 @@ You now have an Office 365 developer subscription to use with the remaining labs
 Follow these steps to sign up for an Azure trial subscription.
 
 1. Navigate to the [Azure Management Portal](https://manage.windowsazure.com)
-2. If prompted, log in using the credentials you created for your Office 365 subscription.
-3. After logging in, you should see a screen notifying you that you do not have a subscription<br/>
-   ![](img/2.png?raw=true "Figure 2")
-4. Click Sign Up for Microsoft Azure.
-5. Fill out the form to obtain your free trial.
+2. Log in with your account, or create one if you don't have one
+Here we will associate your Azure account with your O365 tenant as a global administrator.
+This gives you the ability to manage the O365 directory using the Azure portal.
 
-You now have a Microsoft Azure trial subscription to use with the remaining labs.
+
+01. Sign into the [Azure Portal](https://manage.windowsazure.com/)
+
+02. Click **+ New**
+
+    ![](img/0001_azure_portal_new_button.png)
+
+03. Select **App Services > Active Directory > Directory > Custom Create**
+
+    ![](img/0005_custom_create_active_directory.png)
+
+04. Select **Use existing directory**, and then **I am ready to be signed out now**
+
+    ![](img/00010_use_existing_directory.png)
+
+05. You will be signed out of the portal and redirected to a sign-in page. Sign in using the credentials for a global
+    administrator in your O365 tenant.
+
+    ![](img/00015_sign_in_as_directory_global_admin.png)
+
+06. When authenticated click **continue**. This will add your Azure account as a global administrator of the O365
+    directory.
+
+    ![](img/00020_accept_confirmation_dialog.png)
+
+07. Click **Sign out now** and when prompted sign back into your Azure account.
+
+    ![](img/00025_sign_out_and_sign_back_in.png)
+
+
+You have successfully associated your Azure account with your O365 tenant as a global administrator.
+This gives you the ability to manage the O365 directory using the Azure portal.
+
+You now can now use your Microsoft Azure  subscription to use with the remaining labs.
 
 <a name="Exercise2"></a>
 ##Exercise 2: Create a Provider-Hosted App
