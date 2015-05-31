@@ -117,14 +117,15 @@ You now can now use your Microsoft Azure  subscription to use with the remaining
 
 <a name="Exercise2"></a>
 ##Exercise 2: Create an excel and SharePoint add-in using the Napa Development Tools
-### Install the Napa Tools ###
+### Install the Napa Tools
 1. Navigate to the developer site you created in exercise 1. It should be something like http://<your-site>.sharepoint.com/sites/dev
 2. Select build an app.![](http://i.imgur.com/O2sx9EC.png)
 3. You'll be redirected to the SharePoint Store.
  ![](http://i.imgur.com/ELCBX92.png) and will need to add it ![](http://i.imgur.com/Bo1esWB.png)  Continue through the prompts, add the app to your site, and trust it.
 ![](http://i.imgur.com/Kd7HANK.png)
 ![](http://i.imgur.com/d5Rx7JG.png)
-### Create an add-in for Excel ###
+
+### Create an add-in for Excel
 1. Navigate back to your developer site (something like http://<your-site>.sharepoint.com/sites/dev) 
 2. Select build an app.![](http://i.imgur.com/O2sx9EC.png)
 3. Click on the Task Pane app for Office option. Name your Task Pane Project and click create.![](http://i.imgur.com/7PeKxvs.png)
